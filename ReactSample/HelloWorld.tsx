@@ -178,13 +178,15 @@ export const HelloWorld: React.FC = () => {
 			</form>
 			<br />
 			<br />
-			<Calendar
-				localizer={localizer}
-				events={events}
-				startAccessor='start'
-				endAccessor='end'
-				views={{ month: true, week: true, day: true }}
-			/>
+			<div style={{ height: 700 }}>
+				<Calendar
+					localizer={localizer}
+					events={events}
+					startAccessor='start'
+					endAccessor='end'
+					views={{ month: true, week: true, day: true }}
+				/>
+			</div>
 		</>
 	);
 };
